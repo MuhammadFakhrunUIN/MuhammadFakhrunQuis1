@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Judul/Header -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Fakhrun Quis 1"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Form Nama -->
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="32dp"
+        android:hint="Nama"/>
+
+    <!-- Header(?) "Tipe Pelanggan" -->
+    <TextView
+        android:id="@+id/textViewTipePelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe Pelanggan"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextNama"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Radio Group for Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/radioGroupTipePelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTipePelanggan"
+        android:layout_marginTop="16dp">
+
+        <!-- Radio "Gold" -->
+        <RadioButton
+            android:id="@+id/radioButtonGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"/>
+
+        <!-- Radio "Silver" -->
+        <RadioButton
+            android:id="@+id/radioButtonSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"/>
+
+        <!-- Radio "Biasa" -->
+        <RadioButton
+            android:id="@+id/radioButtonBiasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biasa"/>
+    </RadioGroup>
+
+    <!-- Form Kode Barang -->
+    <EditText
+        android:id="@+id/editTextKodeBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupTipePelanggan"
+        android:layout_marginTop="32dp"
+        android:hint="Kode Barang"/>
+
+    <!-- Form Jumlah Barang -->
+    <EditText
+        android:id="@+id/editTextJumlahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKodeBarang"
+        android:layout_marginTop="16dp"
+        android:hint="Jumlah Barang"/>
+
+    <!-- Button Process -->
+    <Button
+        android:id="@+id/buttonProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Process"
+        android:layout_below="@id/editTextJumlahBarang"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

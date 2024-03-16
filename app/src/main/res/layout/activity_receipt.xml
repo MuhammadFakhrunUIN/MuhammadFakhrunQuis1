@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header "Selamat Datang (Nama)" -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang "
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Header "Tipe Member (Tipe Pelanggan)" -->
+    <TextView
+        android:id="@+id/textViewTipeMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe Member "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- "Transaksi hari ini" -->
+    <TextView
+        android:id="@+id/textViewTransaksiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaksi hari ini"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTipeMember"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Kode Barang -->
+    <TextView
+        android:id="@+id/textViewKodeBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Barang: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTransaksiTitle"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Nama Barang -->
+    <TextView
+        android:id="@+id/textViewNamaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewKodeBarang"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Harga Barang -->
+    <TextView
+        android:id="@+id/textViewHargaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewNamaBarang"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Total Harga Barang -->
+    <TextView
+        android:id="@+id/textViewTotalHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewHargaBarang"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Diskon Harga -->
+    <TextView
+        android:id="@+id/textViewDiskonHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diskon Harga: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTotalHarga"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Diskon Member -->
+    <TextView
+        android:id="@+id/textViewDiskonMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diskon Member: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewDiskonHarga"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Jumlah Bayar -->
+    <TextView
+        android:id="@+id/textViewJumlahBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Bayar: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewDiskonMember"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Terimakasih -->
+    <TextView
+        android:id="@+id/textViewTerimaKasih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terimakasih telah berbelanja disini!"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewJumlahBayar"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Tombol Share -->
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/textViewTerimaKasih"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
